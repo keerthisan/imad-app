@@ -26,8 +26,20 @@ var articles={
             </p>
         
     },
-    Articletwo:
-    Articlethree:
+    Articletwo:{
+     title:'Article-two ',
+        heading:'Article-two',
+        date:'Aug 5th 2017',
+        content:`
+        
+    },
+    
+    Articlethree:{
+         title:'Article-three ',
+        heading:'Article-three',
+        date:'Aug 5th 2017',
+        content:`
+    }
 };
 
 function createTemplate(data){
