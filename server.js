@@ -26,44 +26,7 @@ var articles = {
 
     
 },
-    Articletwo : {
-    title:'Article two' ,
-    heading:'Article two' ,
-    date:'aug 5,2017' ,
-    content:
-    `<p>
-                Most children have been said to play with whatever they can find, such as sticks and rocks. Toys and games have been unearthed from the sites of ancient civilizations. They have been written about in some of the oldest literature. Toys excavated from the Indus valley civilization (3010-1500 BCE) include small carts, whistles shaped like birds, and toy monkeys which could slide down a string.
-            </p>
-            <p>
-                The earliest toys are made from materials found in nature, such as rocks, sticks, and clay. Thousands of years ago, Egyptian children played with dolls that had wigs and movable limbs which were made from stone, pottery, and wood.[4] In Ancient Greece and Ancient Rome, children played with dolls made of wax or terracotta, sticks, bows and arrows, and yo-yos. When Greek children, especially girls, came of age it was customary for them to sacrifice the toys of their childhood to the gods. On the eve of their wedding, young girls around fourteen would offer their dolls in a temple as a rite of passage into adulthood
-            </p>
-            <p>
-                The oldest known mechanical puzzle also comes from Greece and appeared in the 3rd century BC. The game consisted of a square divided into 14 parts, and the aim was to create different shapes from these pieces. In Iran "puzzle-locks" were made as early as the 17th century (AD).
-
-
-            </p>
-            },
-            
-    Articlethree : {
-    title:'Article three' ,
-    heading:'Article three' ,
-    date:'aug 5,2017' ,
-    content:
-    `<p>
-               Toys, like play itself, serve multiple purposes in both humans and animals. They provide entertainment while fulfilling an educational role. Toys enhance cognitive behavior and stimulate creativity. They aid in the development of physical and mental skills which are necessary in later life. 
-            </p>
-            <p>
-                One of the simplest toys, a set of simple wooden blocks is also one of the best toys for developing minds. Andrew Witkin, director of marketing for Mega Brands told Investor's Business Daily that, "They help develop hand-eye coordination, math and science skills and also let kids be creative."[20] Other toys like Marbles, jackstones, and balls serve similar functions in child development, allowing children to use their minds and bodies to learn about spatial relationships, cause and effect, and a wide range of other skills as well as those mentioned by Mr. Witkin.
-            </p>
-            <p>
-                One example of the dramatic ways that toys can influence child development involves clay sculpting toys such as Play-Doh and Silly Putty and their home-made counterparts. Mary Ucci, Educational Director of the Child Study Center of Wellesley College, demonstrates how such toys positively impact the physical development, cognitive development, emotional development, and social development of children.[21]
-
-Toys for infants often make use of distinctive sounds, bright colors, and unique textures. Through play with toys infants begin to recognize shapes and colors. Repetition reinforces memory. Play-Doh, Silly Putty and other hands-on materials allow the child to make toys of their own.
-
-Educational toys for school age children of often contain a puzzle, problem-solving technique, or mathematical proposition. Often toys designed for older audiences, such as teenagers or adults demonstrate advanced concepts. Newton's cradle, a desk toy designed by Simon Prebble, demonstrates the conservation of momentum and energy.
-            </p>
-              
-    }
+   
 };
 function createTemplate(data){
     var title=data.title;
