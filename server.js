@@ -5,85 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-
-var articles={
-    ArticleOne={
-        title:'Article-one ',
-        heading:'Article-one',
-        date:'Aug 5th 2017',
-        content:`
-        <p>
-                A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and "fly it." Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collector's items and are intended for display only.
-            </p>
-            <p>
-                The origin of toys is prehistoric; dolls representing infants, animals, and soldiers, as well as representations of tools used by adults are readily found at archaeological sites. The origin of the word "toy" is unknown, but it is believed that it was first used in the 14th century. Toys are mainly made for children.[1] The oldest known doll toy that has been found is thought to be 4,000 years old.[2]
-            </p>
-            <p>
-                Playing with toys is considered to be important when it comes to growing up and learning about the world around us. Younger children use toys to discover their identity, help their bodies grow strong, learn cause and effect, explore relationships, and practice skills they will need as adults. Adults on occasion use toys to form and strengthen social bonds, teach, help in therapy, and to remember and reinforce lessons from their youth.
-
-
-            </p>
-        
-    },
-    Articletwo:{
-     title:'Article-two ',
-        heading:'Article-two',
-        date:'Aug 5th 2017',
-        content:`
-        
-    },
-    
-    Articlethree:{
-         title:'Article-three ',
-        heading:'Article-three',
-        date:'Aug 5th 2017',
-        content:`
-    }
-};
-
-function createTemplate(data){
-    var title=data.title;
-    var date=data.date;
-    var heading=data.heading;
-    var content=data.content;
-    
-
-var htmlTemplate =`
-
-<html>
-<head>
-<title>
-${title}
-</title>
-<meta name="viewport" content="width-device-width,initial-scale-1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-        </head>
-        <body>
-        <div class="container">
-        <div>
-        <a href="/">Home</a>
-        </div>
-        <hr/>
-        <h3>
-        ${heading}
-        </h3>
-        <div>
-        ${date}
-        </div>
-        <div>
-        ${content}
-        </div>
-        </div>
-        </body>
-        </html>`;
-
-return htmlTemplate;
-}
-
-
 app.get('/', function (req, res) {
-  res.send(createTemplate(Article-one));
+    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+ 
 });
 app.get('/article-one',function (req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
